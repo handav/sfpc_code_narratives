@@ -1,7 +1,7 @@
 # Text's Invisible Structures: Grammar, Sentiment, Subjectivity 
 
 
-## Instructor: ### [Hannah Davis](https://www.hannahishere.com)
+## Instructor: [Hannah Davis](https://www.hannahishere.com)
 
 
 ## Description: 
