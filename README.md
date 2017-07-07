@@ -12,4 +12,4 @@ In this class, we'll look at unique ways to create generative projects with text
 
 We'll start with a roughly 30 minute lecture. We'll talk in general about emotional data & sentiment analysis, data sonification (representing data through sound), and subjective datasets. I will show my work on using the texts of novels, debates, news articles, and country constitutions as inputs to generate music.
 
-We'll use the remaining class time to create a Twitter bot, and go over the pipeline from setup to hosting.
+We'll use the remaining class time to create a Twitter bot bringing together everything we've learned, and go over the pipeline from setup to hosting.
