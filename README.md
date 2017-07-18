@@ -12,4 +12,18 @@ In this class, we'll look at unique ways to create generative projects with text
 
 We'll start with a roughly 30 minute lecture. We'll talk in general about emotional data & sentiment analysis, data sonification (representing data through sound), and subjective datasets. I will show my work on using the texts of novels, debates, news articles, and country constitutions as inputs to generate music.
 
-We'll use the remaining class time to create a Twitter bot bringing together everything we've learned, and go over the pipeline from setup to hosting.
+We'll use the remaining class time to create a Twitter bot that reads tweets and generates audio based on the grammatical structure. 
+
+## More Resources:
+
+Midi note numbers:
+http://www.electronics.dit.ie/staff/tscarff/Music_technology/midi/midi_note_numbers_for_octaves.htm
+
+MidiUtil documentation: 
+https://media.readthedocs.org/pdf/midiutil/latest/midiutil.pdf
+
+Setting up a Twitter application:
+https://twython.readthedocs.io/en/latest/usage/starting_out.html#starting-out
+
+Twitter bots in Node.js, including hosting:
+https://github.com/handav/twitter-bots
