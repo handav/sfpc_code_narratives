@@ -10,9 +10,9 @@ In this class, we'll look at unique ways to create generative projects with text
 
 ## Outline:
 
-We'll start with a roughly 30 minute lecture. We'll talk in general about emotional data & sentiment analysis, data sonification (representing data through sound), and subjective datasets. I will show my work on using the texts of novels, debates, news articles, and country constitutions as inputs to generate music.
+We'll start with a roughly 30-40 minute lecture. We'll talk in general about emotional data & sentiment analysis, data sonification (representing data through sound), and subjective datasets. I will show my work on using the texts of novels, debates, news articles, and country constitutions as inputs to generate music.
 
-We'll use the remaining class time to create a Twitter bot that reads tweets and generates audio based on the grammatical structure. 
+We'll use the remaining class time to create a read-only Twitter bot that reads tweets and generates audio based on the grammatical structure of the tweet. 
 
 ## More Resources:
 
@@ -42,4 +42,6 @@ twython (for interacting with the Twitter API)
 nltk (for tagging text with parts of speech)
 
 midiutil (for creating a midi file)
+
+To run the program, navigate to the py_audiobot folder and type (into terminal): 'python main.py'
 
