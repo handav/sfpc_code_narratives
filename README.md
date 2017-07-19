@@ -27,3 +27,15 @@ https://twython.readthedocs.io/en/latest/usage/starting_out.html#starting-out
 
 Twitter bots in Node.js, including hosting:
 https://github.com/handav/twitter-bots
+
+Searching for tweets on Twitter:
+https://dev.twitter.com/rest/public/search
+
+## Python Audiobot Setup:
+
+This audiobot requires four packages (you can use 'pip install package_name' or your installer of choice):
+os (operating system, to access your environment variables)
+twython (for interacting with the Twitter API)
+nltk (for tagging text with its parts of speech)
+midiutil (for creating a midi file)
+
