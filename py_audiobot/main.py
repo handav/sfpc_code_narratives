@@ -18,8 +18,9 @@ def clean_tweet(pos):
     cleaned = []
     is_username = False
     for tag in pos:
+        print tag
         #eliminate emojis and punctuation
-        if '\U' not in tag[0].encode('unicode-escape') and '.' not in tag[1] and ',' not in tag[1]:
+        if '\u' not in tag[0].encode('unicode-escape') and '\U' not in tag[0].encode('unicode-escape') and '.' not in tag[1] and ',' not in tag[1] and ':' not in tag[1]:
             if '@' in tag[0]:
                 #don't add the @ symbol on its own, add it to the username
                 is_username = True
@@ -43,6 +44,7 @@ def compose_midi(tagged_text):
     midi_file = midiutil.MIDIFile(1, adjust_origin=True)
     midi_file.addTempo(track, time, tempo)
     for tag in tagged_text:
+        #print tag
         note = 0
         if 'NN' in tag[1]:
             note = 52
@@ -62,12 +64,13 @@ def save_midi(cleaned_tweet, midi_file):
 
     with open(filename, 'wb') as output_file:
         midi_file.writeFile(output_file)
+        print 'midi file saved'
 
-
-tweets = twitter.search(q='from:@pentametron')
-for status in tweets['statuses'][:2]:
-    tweet = status['text'].split(':')[1]
-    pos = get_pos(tweet)
-    cleaned_tweet = clean_tweet(pos)
-    midi_file = compose_midi(cleaned_tweet)
-    save_midi(cleaned_tweet, midi_file)
+if __name__ == '__main__':
+    tweets = twitter.search(q='from:@pentametron')
+    for status in tweets['statuses'][2:4]:
+        tweet = status['text'].split(':')[1]
+        pos = get_pos(tweet)
+        cleaned_tweet = clean_tweet(pos)
+        midi_file = compose_midi(cleaned_tweet)
+        save_midi(cleaned_tweet, midi_file)

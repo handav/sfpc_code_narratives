@@ -35,7 +35,7 @@ https://dev.twitter.com/rest/public/search
 
 This audiobot requires four packages (you can use 'pip install package_name' or your installer of choice):
 
-os (operating system, to access your environment variables)
+os (operating system, to access your environment variables) (this is already pre-installed)
 
 twython (for interacting with the Twitter API)
 
